@@ -17,9 +17,10 @@ int fibbo(int n){
 int main(){
     int n,res;
     cin>>n;
-    for(int i=0;i<n;i++) dp[i]=-1;
+    for(int i=0;i<=n;i++) dp[i]=-1;
     res=fibbo(n);
-    for(int i=0;i<n;i++) cout<<dp[i]<<" ";
+    for(int i=0;i<=n;i++) cout<<dp[i]<<" ";
+    cout<<"\n";
     cout<<res;
     return 0;
 }
