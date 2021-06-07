@@ -14,8 +14,9 @@ int fact(int n){
 int main(){
     int n;
     cin>>n;
-    for(int i=0;i<n;i++) dp[i]=-1;
+    for(int i=0;i<=n;i++) dp[i]=-1;
+    for(int i=0;i<=n;i++) cout<<dp[i]<<" ";
+    cout<<"\n";
     cout<<fact(n);
-    for(int i=0;i<n;i++) cout<<dp[i]<<" ";
     return 0;
 }
